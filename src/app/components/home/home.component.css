@@ -1,0 +1,19 @@
+.total{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    padding-left:10px;
+    font-size: 18px;
+}
+.pct{
+    font-size: 60px;
+    color: rgb(10, 62, 129);
+}
+a{
+    padding: 4px;
+}
+.levantamento{
+    font-size: 20px;;
+}

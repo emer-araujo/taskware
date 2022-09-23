@@ -1,0 +1,56 @@
+<!-- Construir o formulario para obtenção de dados-->
+<div>
+        <h3>{{title}}</h3>
+        <form [formGroup] = "listTasks" (ngSubmit) = "inserirTarefa(listTasks.value)">
+            <div class="container">
+                <div>
+                    <fieldset>
+                        <legend>Tarefas</legend>
+                        <input type="text" formControlName="task" placeholder="Digite sua Tarefas">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Nome</legend>
+                        <input type="text" formControlName="name" placeholder="Digite seu nome"/>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Sobrenome</legend>
+                        <input type="text" formControlName="last" placeholder="Digite seu sobrenome"/>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="text" formControlName="email" placeholder="Digite seu email"/>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Telefone</legend>
+                        <input type="text" formControlName="phone" placeholder="Digite seu telefone"/>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Data de Início</legend>
+                        <input type="date" formControlName="date_ini"/>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Classificação</legend>
+                        <select formControlName="classification">
+                            <option>Critíca</option> 
+                            <option>Alta</option> 
+                            <option>Media</option> 
+                            <option>Baixa</option> 
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+            <input type="submit" [disabled] = "!listTasks.valid" value="Enviar Dados"/>        
+        </form>
+</div>

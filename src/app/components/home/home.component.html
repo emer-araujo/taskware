@@ -1,0 +1,21 @@
+<div>
+    <div class="total">
+        <h2><strong>{{welcome}}, há {{openTsk}} tarefas abertas</strong></h2>
+        
+    </div>
+    <div class="levantamento">
+        <div>
+            <span class="pct">{{pctTsk}}%</span>
+            <span class="text">das <a routerLink="/list">tarefas</a> estão abertas.</span> 
+        </div>
+        <div>
+            <span>Total de tarefas: {{totalTsk}}.</span>
+        </div>
+        <div>
+            <span>Tarefas abertas: {{openTsk}}.</span>
+        </div>
+        <div>
+            <span>Tarefas fechadas: {{totalTsk-openTsk}}.</span>
+        </div>
+    </div>
+</div>

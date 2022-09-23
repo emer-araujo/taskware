@@ -1,0 +1,15 @@
+h3 {
+    font-weight: bold;
+}
+input, select, fieldset{
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+}

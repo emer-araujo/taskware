@@ -1,0 +1,49 @@
+{
+  "tasks": [
+    {
+      "task": "Formatar Computador",
+      "name": "Sergio",
+      "last": "Rodrigues",
+      "email": "sergio@rodrigues",
+      "phone": "1170707070",
+      "date_ini": "2022-09-23",
+      "classification": "Baixa",
+      "status": "Aberta",
+      "id": 1
+    },
+    {
+      "task": "Criar um website ecommerce",
+      "name": "Asafe",
+      "last": "Figueiredo",
+      "email": "asafe@asafe",
+      "phone": "11970707070",
+      "date_ini": "2022-09-10",
+      "date_end": "2022-09-20",
+      "classification": "Critíca",
+      "status": "Fechada",
+      "id": 2
+    },
+    {
+      "task": "Aula Javascript",
+      "name": "Celio",
+      "last": "Souza",
+      "email": "celio@souza",
+      "phone": "1170707070",
+      "date_ini": "2022-09-23",
+      "classification": "Critíca",
+      "status": "Aberta",
+      "id": 3
+    },
+    {
+      "task": "Criação de contratos",
+      "name": "Paloma",
+      "last": "Sineli",
+      "email": "paloma@sineli",
+      "phone": "1170707070",
+      "date_ini": "2022-09-23",
+      "classification": "Critíca",
+      "status": "Aberta",
+      "id": 4
+    }
+  ]
+}

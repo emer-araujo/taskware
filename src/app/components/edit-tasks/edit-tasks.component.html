@@ -1,0 +1,76 @@
+<!-- Construir o formulario para obtenção de dados-->
+<div>
+    <h3>{{title}}</h3>
+    <form [formGroup]="listTasks" (ngSubmit)="atualizarTarefa(listTasks.value)">
+        <div class="container">
+            <div>
+                <fieldset>
+                    <legend>Tarefas</legend>
+                    <input type="text" [(ngModel)]="oldTasks.task" formControlName="task"
+                        placeholder="Digite sua Tarefa">
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Nome</legend>
+                    <input type="text" [(ngModel)]="oldTasks.name" formControlName="name"
+                        placeholder="Digite seu nome" />
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Sobrenome</legend>
+                    <input type="text" [(ngModel)]="oldTasks.last" formControlName="last"
+                        placeholder="Digite seu sobrenome" />
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>E-mail</legend>
+                    <input type="text" [(ngModel)]="oldTasks.email" formControlName="email"
+                        placeholder="Digite seu email" />
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Telefone</legend>
+                    <input type="text" [(ngModel)]="oldTasks.phone" formControlName="phone"
+                        placeholder="Digite seu telefone" />
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Data de Início</legend>
+                    <input type="date" [(ngModel)]="oldTasks.date_ini" formControlName="date_ini" />
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Data de Encerramento</legend>
+                    <input type="date" [(ngModel)]="oldTasks.date_end" formControlName="date_end">
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Classificação</legend>
+                    <select formControlName="classification" [(ngModel)]="oldTasks.classification">
+                        <option>Critíca</option>
+                        <option>Alta</option>
+                        <option>Media</option>
+                        <option>Baixa</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Status</legend>
+                    <select formControlName="status" [(ngModel)]="oldTasks.status">
+                        <option>Aberta</option>
+                        <option>Fechada</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <input type="submit" [disabled]="!listTasks.valid" value="Enviar Dados" />
+    </form>
+</div>
